@@ -53,7 +53,7 @@ class Auth extends React.Component {
       <>
         <div className="main-content">
           <AuthNavbar />
-          <div className="header bg-gradient-info py-7 py-lg-8">
+          <div className="header bg-gradient-info py-5 py-lg-6">
             <Container>
               <div className="header-body text-center">
                 <Row className="justify-content-center">
@@ -83,7 +83,7 @@ class Auth extends React.Component {
             </div>
           </div>
           {/* Page content */}
-          <Container className="mt--8 pb-5">
+          <Container className="mt--6 pb-5">
             <Row className="justify-content-center">
               <Switch>
                 {this.getRoutes(routes)}
