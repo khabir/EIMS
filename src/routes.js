@@ -33,21 +33,21 @@ var routes = [
   },
   {
     path: "/icons",
-    name: "Icons",
+    name: "Student",
     icon: "ni ni-planet text-blue",
     component: Icons,
     layout: "/admin"
   },
   {
     path: "/maps",
-    name: "Maps",
+    name: "Teacher",
     icon: "ni ni-pin-3 text-orange",
     component: Maps,
     layout: "/admin"
   },
   {
     path: "/user-profile",
-    name: "User Profile",
+    name: "Course",
     icon: "ni ni-single-02 text-yellow",
     component: Profile,
     layout: "/admin"
