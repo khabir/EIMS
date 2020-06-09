@@ -36,9 +36,8 @@ class Login extends React.Component {
                     href="https://www.facebook.com/KhabirUdDulon"
                     target="_blank"
                   >
-                    Khabir Baahe 
+                    Khabir Ud Dulon
                   </a>
-                  Vala Asuin ni annera!  ;)
                 </div>
               </Col>
               {/* <Col xl="6">

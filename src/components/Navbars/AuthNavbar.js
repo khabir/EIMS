@@ -16,8 +16,10 @@
 
 */
 import React from "react";
+// eslint-disable-next-line
 import { Link } from "react-router-dom";
 // reactstrap components
+// eslint-disable-next-line
 import {
   UncontrolledCollapse,
   NavbarBrand,
@@ -34,7 +36,9 @@ class AdminNavbar extends React.Component {
   render() {
     return (
       <>
-        {/* <Navbar
+        {
+        // eslint-disable-next-line
+        /* <Navbar
           className="navbar-top navbar-horizontal navbar-dark"
           expand="md"
         >

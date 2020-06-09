@@ -21,7 +21,9 @@ import Maps from "views/examples/Maps.js";
 import Register from "views/examples/Register.js";
 import Login from "views/examples/Login.js";
 import Tables from "views/examples/Tables.js";
+// eslint-disable-next-line
 import Icons from "views/examples/Icons.js";
+import Student from "views/examples/Student.js";
 
 var routes = [
   {
@@ -32,23 +34,23 @@ var routes = [
     layout: "/admin"
   },
   {
-    path: "/icons",
+    path: "/student",
     name: "Student",
-    icon: "ni ni-planet text-blue",
-    component: Icons,
+    icon: "ni ni-single-02 text-blue",
+    component: Student,
     layout: "/admin"
   },
   {
     path: "/maps",
     name: "Teacher",
-    icon: "ni ni-pin-3 text-orange",
+    icon: "ni ni-circle-08 text-orange",
     component: Maps,
     layout: "/admin"
   },
   {
     path: "/user-profile",
     name: "Course",
-    icon: "ni ni-single-02 text-yellow",
+    icon: "ni ni-books text-yellow",
     component: Profile,
     layout: "/admin"
   },
