@@ -45,20 +45,6 @@ class Register extends React.Component {
               </div>
               <div className="text-center">
                 <Button
-                  className="btn-neutral btn-icon mr-4"
-                  color="default"
-                  href="#pablo"
-                  onClick={e => e.preventDefault()}
-                >
-                  <span className="btn-inner--icon">
-                    <img
-                      alt="..."
-                      src={require("assets/img/icons/common/github.svg")}
-                    />
-                  </span>
-                  <span className="btn-inner--text">Github</span>
-                </Button>
-                <Button
                   className="btn-neutral btn-icon"
                   color="default"
                   href="#pablo"
@@ -71,6 +57,20 @@ class Register extends React.Component {
                     />
                   </span>
                   <span className="btn-inner--text">Google</span>
+                </Button>
+                <Button
+                  className="btn-neutral btn-icon mr-4"
+                  color="default"
+                  href="#pablo"
+                  onClick={e => e.preventDefault()}
+                >
+                  <span className="btn-inner--icon">
+                    <img
+                      alt="..."
+                      src={require("assets/img/icons/common/facebook.svg")}
+                    />
+                  </span>
+                  <span className="btn-inner--text">Facebook</span>
                 </Button>
               </div>
             </CardHeader>
