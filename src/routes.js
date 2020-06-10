@@ -16,7 +16,9 @@
 
 */
 import Index from "views/Index.js";
+// eslint-disable-next-line
 import Profile from "views/examples/Profile.js";
+// eslint-disable-next-line
 import Maps from "views/examples/Maps.js";
 import Register from "views/examples/Register.js";
 import Login from "views/examples/Login.js";
@@ -24,6 +26,8 @@ import Tables from "views/examples/Tables.js";
 // eslint-disable-next-line
 import Icons from "views/examples/Icons.js";
 import Student from "views/examples/Student.js";
+import Teacher from "views/examples/Teacher.js";
+import Course from "views/examples/Course.js";
 
 var routes = [
   {
@@ -36,44 +40,49 @@ var routes = [
   {
     path: "/student",
     name: "Student",
-    icon: "ni ni-single-02 text-blue",
+    icon: "ni ni-hat-3 text-blue",
     component: Student,
     layout: "/admin"
   },
   {
-    path: "/maps",
+    path: "/teacher",
     name: "Teacher",
-    icon: "ni ni-circle-08 text-orange",
-    component: Maps,
+    icon: "ni ni-single-02 text-orange",
+    component: Teacher,
     layout: "/admin"
   },
   {
-    path: "/user-profile",
+    path: "/course",
     name: "Course",
     icon: "ni ni-books text-yellow",
-    component: Profile,
+    component: Course,
     layout: "/admin"
   },
   {
     path: "/tables",
-    name: "Tables",
+    name: "Report",
     icon: "ni ni-bullet-list-67 text-red",
     component: Tables,
     layout: "/admin"
   },
   {
+    path: "/register",
+    name: "User",
+    icon: "ni ni-circle-08 text-pink",
+    component: Register,
+    layout: "/auth"
+  },
+  {
     path: "/login",
-    name: "Login",
-    icon: "ni ni-key-25 text-info",
+    name: "Settings",
+    icon: "ni ni-settings text-info",
     component: Login,
     layout: "/auth"
   },
   {
-    path: "/register",
-    name: "Register",
-    icon: "ni ni-circle-08 text-pink",
-    component: Register,
-    layout: "/auth"
+    path: "/user-profile",
+    component: Profile,
+    layout: "/admin"
   }
 ];
 export default routes;

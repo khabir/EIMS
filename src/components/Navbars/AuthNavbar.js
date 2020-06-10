@@ -19,18 +19,17 @@ import React from "react";
 // eslint-disable-next-line
 import { Link } from "react-router-dom";
 // reactstrap components
-// eslint-disable-next-line
-import {
-  UncontrolledCollapse,
-  NavbarBrand,
-  Navbar,
-  NavItem,
-  NavLink,
-  Nav,
-  Container,
-  Row,
-  Col
-} from "reactstrap";
+// import {
+//   UncontrolledCollapse,
+//   NavbarBrand,
+//   Navbar,
+//   NavItem,
+//   NavLink,
+//   Nav,
+//   Container,
+//   Row,
+//   Col
+// } from "reactstrap";
 
 class AdminNavbar extends React.Component {
   render() {
