@@ -49,12 +49,15 @@ class Tables extends React.Component {
           {/* Table */}
           <Row>
             <div className="col">
-              <Card className="bg-default shadow">
+              <Card className="shadow">
                 <CardHeader className="bg-transparent border-0">
-                  <h3 className="text-white mb-0">Course List</h3>
+                  <div className="clearfix" style={{ padding: '.5rem' }}>
+                    <h3 style={{ marginLeft: "0" }} className="mb-0 float-left">Course List</h3>
+                    <button className="btn btn-primary float-right">Add Course</button>
+                  </div>
                 </CardHeader>
-                <Table className="align-items-center table-dark table-flush" responsive>
-                  <thead className="thead-dark">
+                <Table className="align-items-center table-flush" responsive>
+                  <thead className="thead-light">
                     <tr>
                       <th scope="col">Title</th>
                       <th scope="col">Course Code</th>
@@ -90,7 +93,7 @@ class Tables extends React.Component {
                           <i className="bg-warning" />
                             Inactive
                         </Badge>
-                      </td>                      
+                      </td>
                       <td>
                         <div className="d-flex align-items-center">
                           <span className="mr-2">60%</span>
