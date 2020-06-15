@@ -33,7 +33,7 @@ class Header extends React.Component {
                   <Card className="card-stats mb-4 mb-xl-0">
                     <CardBody>
                       <Row>
-                        <div className="col">
+                        <div className="col" style={{ paddingRight: 10 }}>
                           <CardTitle
                             tag="h5"
                             className="text-uppercase text-muted mb-0"
@@ -76,7 +76,7 @@ class Header extends React.Component {
                         </div>
                         <Col className="col-auto">
                           <div className="icon icon-shape bg-warning text-white rounded-circle shadow">
-                            <i className="fas fa-chart-pie" />
+                            <i className="fas fa-users" />
                           </div>
                         </Col>
                       </Row>
@@ -104,7 +104,7 @@ class Header extends React.Component {
                         </div>
                         <Col className="col-auto">
                           <div className="icon icon-shape bg-yellow text-white rounded-circle shadow">
-                            <i className="fas fa-users" />
+                            <i className="fas fa-chart-pie" />
                           </div>
                         </Col>
                       </Row>
@@ -121,7 +121,7 @@ class Header extends React.Component {
                   <Card className="card-stats mb-4 mb-xl-0">
                     <CardBody>
                       <Row>
-                        <div className="col">
+                        <div className="col" style={{ paddingRight: 10 }}>
                           <CardTitle
                             tag="h5"
                             className="text-uppercase text-muted mb-0"
