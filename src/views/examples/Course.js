@@ -19,6 +19,7 @@ import React from "react";
 
 // reactstrap components
 import {
+  Button,
   Badge,
   Card,
   CardHeader,
@@ -34,13 +35,25 @@ import {
   Progress,
   Table,
   Container,
-  Row
+  Row,
+  Modal, ModalHeader, ModalBody, ModalFooter,
+  Form, FormGroup, Label, Input, FormText
 } from "reactstrap";
 // core components
 import Header from "components/Headers/Header.js";
 
 class Tables extends React.Component {
+  state = {
+    isCourseModalOpen: false
+  };
+
+  toggleCourseModal = () => {
+    this.setState({ isCourseModalOpen: !this.state.isCourseModalOpen })
+  }
+
   render() {
+    const closeBtn = <button className="close" onClick={this.toggleCourseModal}>&times;</button>;
+
     return (
       <>
         <Header />
@@ -53,7 +66,7 @@ class Tables extends React.Component {
                 <CardHeader className="bg-transparent border-0">
                   <div className="clearfix" style={{ padding: '.5rem' }}>
                     <h3 style={{ marginLeft: "0" }} className="mb-0 float-left">Course List</h3>
-                    <button className="btn btn-primary float-right">Add Course</button>
+                    <button className="btn btn-primary float-right" onClick={this.toggleCourseModal}>Add Course</button>
                   </div>
                 </CardHeader>
                 <Table className="align-items-center table-flush" responsive>
@@ -492,6 +505,50 @@ class Tables extends React.Component {
                   </nav>
                 </CardFooter>
               </Card>
+              {/* modal */}
+              <div>
+                <Modal isOpen={this.state.isCourseModalOpen} toggle={this.toggleCourseModal}>
+                  <ModalHeader toggle={this.toggleCourseModal} close={closeBtn}>New Course</ModalHeader>
+                  <ModalBody>
+
+
+                    <Form>
+                      <FormGroup>
+                        <Label for="exampleEmail">Course Title</Label>
+                        <Input type="email" name="email" id="exampleEmail" placeholder="with a placeholder" />
+                      </FormGroup>
+                      <FormGroup>
+                        <Label for="examplePassword">Course Code</Label>
+                        <Input type="email" name="email" id="exampleEmail" placeholder="with a placeholder" />
+                      </FormGroup>
+                      <FormGroup>
+                        <Label for="exampleSelect">Status</Label>
+                        <Input type="select" name="select" id="exampleSelect">
+                          <option>Active</option>
+                          <option>Inactive</option>
+                          <option>Running</option>
+                          <option>Old</option>
+                        </Input>
+                      </FormGroup>
+                      <FormGroup>
+                        <Label for="exampleSelect">Department</Label>
+                        <Input type="select" name="select" id="exampleSelect">
+                          <option>Computer Science and Engineering</option>
+                          <option>Blocked</option>
+                          <option>Inactive</option>
+                        </Input>
+                      </FormGroup>
+                    </Form>
+
+
+                  </ModalBody>
+                  <ModalFooter>
+                    <Button color="primary" onClick={this.toggleCourseModal}>Add Course</Button>{' '}
+                    <Button color="secondary" onClick={this.toggleCourseModal}>Cancel</Button>
+                  </ModalFooter>
+                </Modal>
+              </div>
+              {/* end modal */}
             </div>
           </Row>
         </Container>
